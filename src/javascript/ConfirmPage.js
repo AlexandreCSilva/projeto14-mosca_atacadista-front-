@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ContentStyle, LogoStyle, MenuStyle, SelectionStyle, ContentBoxStyle, MainInfoStyle} from '../stylesheet/models.js';
+import { ContentStyle, ContentBoxStyle, MainInfoStyle} from '../stylesheet/models.js';
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import EmblaCarousel from "./EmblaCarouselProduct.js";
@@ -74,14 +74,6 @@ const Content = styled(ContentStyle)`
     } 
 `;
 
-const Logo = styled(LogoStyle)`
-    left: 100px;
-    width: 120px;
-`;
-
-const Menu = styled(MenuStyle)``;
-
-const Selection = styled(SelectionStyle)``;
 
 const ContentBox = styled(ContentBoxStyle)`
     .embla {
