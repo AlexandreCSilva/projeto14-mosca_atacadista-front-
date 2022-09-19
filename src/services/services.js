@@ -37,6 +37,26 @@ function postProduct(data, config) {
   return promise;
 }
 
+function getCart(config) {
+  const promise = axios.get(`${BASE_URL}/cart`, config);
+  return promise;
+}
+
+function postCart(config) {
+  const promise = axios.post(`${BASE_URL}/cart`, config);
+  return promise;
+}
+
+function deleteCart(config) {
+  const promise = axios.delete(`${BASE_URL}/cart`, config);
+  return promise;
+}
+
+function getProductsById(config) {
+  const promise = axios.get(`${BASE_URL}/product/`, config);
+  return promise;
+}
+
 export {
   postSignIn,
   postSignUp,
@@ -45,4 +65,8 @@ export {
   getUser,
   putUser,
   postProduct,
+  getCart,
+  deleteCart,
+  postCart,
+  getProductsById,
 };
